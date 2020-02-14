@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Questrial', sans-serif;
+  background-color: #666;
+}
+
+h1 {
+  color: #fff;
+}
+
+.screen {
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.controls {
+  background-color: #6b69692f;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.controls .btn {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.controls .fa-play {
+  color: #ffffff;
+}
+
+.controls .fa-stop {
+  color: #ffffff;
+}
+
+.controls .fa-pause {
+  color: #fff;
+}
+
+.controls .timestamp {
+  color: #fff;
+  margin: 0 10px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+
+
+/* Custom styles */
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-player {
+  position: relative;
+  width: 60%;
+  max-width: 800px;
+}
+@media (max-width: 800px) {
+  .video-player{
+    width: 90%;
+  }
+}
+.fa-volume-up,.fa-volume-mute{
+  color: #ffffff;
+}
+
+.video-size {
+  background-image: url(../img/full-screen-button.svg);
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: center;
+  color: #ffffff;
+  padding: 18px;
+  width: 36px;
+  height: 36px;
+}
+.video-size:hover {
+  background-color: #4f4f5078;
+  border-radius: 50%;
+}
+.play {
+  background-image: url(../img/play-button.svg);
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: 60% 50%;
+  color: #ffffff;
+  padding: 18px;
+  width: 36px;
+  height: 36px;
+}
+.play:hover {
+  background-color: #4f4f5078;
+  border-radius: 50%;
+}
+.volume {
+  background-image: url(../img/volume.svg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 50% 50%;
+  color: #ffffff;
+  padding: 18px;
+  display: flex;
+  position: relative;
+  width: 36px;
+  height: 36px;
+}
+.volume:hover {
+  background-color: #4f4f5078;
+  border-radius: 18px;
+}
+.volume:hover .volume-progress{
+  display: block;
+}
+.volume-progress {
+  display: none;
+  position: absolute;
+  top: -48px;
+  left: -19px;
+  width: 70px;
+  height: 1px;
+  padding: 10px 0px;
+  transform: rotate(-90deg);
+}
+.fa-pause:hover{
+  background-color: #4f4f5078;
+  border-radius: 50%;
+}
